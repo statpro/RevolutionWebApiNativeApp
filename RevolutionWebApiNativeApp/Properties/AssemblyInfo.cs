@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("RevolutionWebApiNativeApp")]
-[assembly: AssemblyCopyright("Copyright © StatPro 2013")]
+[assembly: AssemblyCopyright("Copyright 2013 StatPro International SARL - a member of StatPro Group plc")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
