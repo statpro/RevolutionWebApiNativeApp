@@ -1,7 +1,7 @@
 ﻿/*
- * This is sample code that shows how a Native (as opposed to a Server-side) client application can obtain access
- * to the Revolution Web API, and is provided on an AS-IS basis.  This isn't production quality code; it is mainly
- * intended to show the techniques involved in talking to the StatPro Revolution OAuth2 Server from a native app.
+ * This is sample code that shows how a Native client application can obtain access to the Revolution Web API, and
+ * is provided on an AS-IS basis.  This isn't production quality code; it is mainly intended to show the techniques
+ * involved in talking to the StatPro Revolution OAuth2 Server from a native app.
  * 
  * This sample does NOT show a lot of useful and necessary techniques:-
  *     - getting portfolios, analysis and results data from the Web API
@@ -137,12 +137,12 @@ namespace RevolutionWebApiNativeApp
         }
 
         // Gets an access token (and refresh token) from the specified authorization code.
-        // The return task will return a tuple whose first item contains the access token, whose second item
-        // contains the refresh token.
+        // The returned task will return a tuple whose first item contains the access token and whose second item
+        // contains the refresh token.  The task will thrown an exception if an error occurs.
         private async Task<Tuple<String, String>> GetAccessTokenFromAuthorizationCodeAsync(String code)
         {
             // Issue a POST request to swap the authorization code for an access token, in accordance with
-            // Section 4.1.3 of http://www.ietf.org/rfc/rfc6749.txt
+            // http://tools.ietf.org/html/rfc6749#section-4.1.3
             HttpClient httpClient = null;
             try
             {
@@ -229,15 +229,15 @@ namespace RevolutionWebApiNativeApp
         // Get this client application's 'client secret'.  How secret the "secret" is depends on the nature
         // of the application, how it is written, how it stores its secret, what environment it runs on, how
         // widely it is distributed, etc. etc.  Broadly speaking, publicly-available native client applications
-        // cannot keep secrets, and so the client secret isn't a secret.  Nevertheless, applications shouldn't
-        // publicly expose the client secret (e.g. this sample application doesn't store it in the App.config
-        // file).  Also: to improve security, native client applications should keep refresh tokens hidden from
-        // user view, and shouldn't persist them.
+        // cannot keep secrets, in which case the client secret isn't a secret.  Nevertheless, such applications
+        // shouldn't publicly expose the client secret (e.g. this sample application doesn't store it in the
+        // App.config file).  Also: to improve security, native client applications should keep refresh tokens
+        // hidden from user view, and shouldn't persist them.
         // For further details: http://tools.ietf.org/html/rfc6819#section-4.1.1
-        // The client secret is obtained upon successful registration of your app with StatPro.
+        // The client secret is originally obtained upon successful registration of your app with StatPro.
         private String GetClientSecret()
         {
-            return "<it's up to you>";
+            return "<it's up to you how the client secret is stored and retrieved>";
         }
     }
 }
