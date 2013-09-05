@@ -24,7 +24,7 @@ For more information:-
 * [Revolution Web API](http://developer.statpro.com/Revolution/WebApi/Intro)
 * [Revolution OAuth2 Server](http://developer.statpro.com/Revolution/WebApi/Authorization/Overview)
 * [Registering your own application](http://developer.statpro.com/Revolution/WebApi/Authorization/Registration)
-* [Revolution OAuth2 application workflow](http://developer.statpro.com/Revolution/WebApi/Authorization/Workflow)
+* [Native applications](http://developer.statpro.com/Revolution/WebApi/Authorization/NativeApps)
 * [OAuth 2.0](http://tools.ietf.org/html/rfc6749)
 * [OAuth 2.0 Native application characteristics](http://tools.ietf.org/html/rfc6749#section-9)
 * [OAuth 2.0 client security considerations](http://tools.ietf.org/html/rfc6819#section-4.1)
@@ -49,9 +49,9 @@ The following techniques are not demonstrated by this simple sample application.
 * getting [portfolios](http://developer.statpro.com/Revolution/WebApi/Resource/Portfolios), [analysis](http://developer.statpro.com/Revolution/WebApi/Resource/PortfolioAnalysis) and results data from the Web API
 * detecting if the Web API has returned one of its [specific errors](http://developer.statpro.com/Revolution/WebApi/Intro#statusCodes)
 * detecting request blockage by the Web API due to a [Fair Usage Policy violation](http://developer.statpro.com/Revolution/WebApi/FairUsagePolicy)
-* detecting if the Web API has [rejected the access token because it has expired](http://developer.statpro.com/Revolution/WebApi/Authorization/Workflow#step4)
-* getting a [new access token from a refresh token](http://developer.statpro.com/Revolution/WebApi/Authorization/Workflow#step5)
-* [re-prompting the user for access](http://developer.statpro.com/Revolution/WebApi/Authorization/Workflow#step1) if getting an access token from a refresh token fails
+* detecting if the Web API has [rejected the access token because it has expired](http://developer.statpro.com/Revolution/WebApi/Authorization/NativeApps#step5)
+* getting a [new access token from a refresh token](http://developer.statpro.com/Revolution/WebApi/Authorization/NativeApps#step5)
+* [re-prompting the user for access](http://developer.statpro.com/Revolution/WebApi/Authorization/NativeApps#step1) if getting an access token from a refresh token fails
 
 Please see other samples on GitHub that cover these techniques.
 
